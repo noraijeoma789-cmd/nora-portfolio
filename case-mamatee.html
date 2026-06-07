@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mama Tee's Kitchen — Nora Anabiri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.case-hero{padding:140px 6% 64px;}
+.case-meta{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px;}
+.case-tag{font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--amber);}
+.case-title{font-family:var(--font-serif);font-size:clamp(32px,5vw,60px);font-weight:400;letter-spacing:-0.03em;color:var(--text);margin-bottom:20px;line-height:1.1;}
+.case-subtitle{font-size:17px;color:var(--muted);max-width:620px;line-height:1.75;font-weight:300;}
+.case-body{padding:0 6% 100px;display:grid;grid-template-columns:1fr 280px;gap:80px;align-items:start;}
+.case-content{}
+.case-sidebar{position:sticky;top:88px;}
+.sidebar-block{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-bottom:12px;}
+.sidebar-label{font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--amber);margin-bottom:8px;display:block;}
+.sidebar-value{font-size:14px;color:var(--muted);line-height:1.6;}
+.case-section{margin-bottom:56px;}
+.case-section-title{font-family:var(--font-serif);font-size:24px;font-weight:400;letter-spacing:-0.02em;color:var(--text);margin-bottom:16px;}
+.case-text{font-size:15px;color:var(--muted);line-height:1.85;margin-bottom:16px;}
+.case-img{width:100%;border-radius:var(--radius-sm);border:1px solid var(--border);display:block;margin-bottom:8px;}
+.case-img-cap{font-size:12px;color:var(--dim);margin-bottom:32px;text-align:center;}
+.case-nav{display:flex;justify-content:space-between;padding:40px 6%;border-top:1px solid var(--border);}
+.case-nav a{text-decoration:none;display:flex;flex-direction:column;gap:4px;}
+.case-nav-label{font-size:10px;color:var(--dim);letter-spacing:0.1em;text-transform:uppercase;}
+.case-nav-title{font-family:var(--font-serif);font-size:17px;color:var(--text);transition:color 0.2s;}
+.case-nav a:hover .case-nav-title{color:var(--amber);}
+@media(max-width:900px){.case-body{grid-template-columns:1fr;}.case-sidebar{position:static;}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="index.html" class="nav-logo">Nora Anabiri</a>
+  <ul class="nav-links">
+    <li><a href="work.html">Work</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <a href="index.html#contact" class="nav-cta">Let's Talk</a>
+</nav>
+
+<div class="case-hero">
+  <div class="case-meta"><span class="case-tag">F&B · Voice AI · Vapi</span></div>
+  <h1 class="case-title">Mama Tee's Kitchen</h1>
+  <p class="case-subtitle">Voice AI assistant for a restaurant that handles order inquiries and reservation requests via a live website.</p>
+</div>
+
+<div class="case-body">
+  <div class="case-content">
+    <div class="case-section">
+      <h2 class="case-section-title">The Problem</h2>
+      <p class="case-text">Restaurant staff spent significant time answering repetitive phone inquiries about the menu, opening hours, and reservation availability. The owner wanted customers to get instant answers without waiting for a human to pick up.</p>
+    </div>
+    <div class="case-section">
+      <h2 class="case-section-title">The Solution</h2>
+      <p class="case-text">I built a Vapi voice agent with an ElevenLabs voice, deployed on a Cloudflare Pages website. Two n8n workflows handle the backend — one routes order inquiries and logs them to Airtable, another processes reservation requests with date and party size. The agent handles the full conversation and only escalates edge cases.</p>
+    </div>
+    <div class="case-section">
+      <h2 class="case-section-title">Screenshots</h2>
+      <img src="mamatee-vapi.png" alt="Mama Tee's Kitchen" class="case-img">
+      <p class="case-img-cap">Vapi agent configuration with ElevenLabs voice and conversation flow</p>
+      <img src="mamatee-n8n.png" alt="Mama Tee's Kitchen" class="case-img">
+      <p class="case-img-cap">n8n workflow routing voice agent responses to Airtable</p>
+    </div>
+  </div>
+  <div class="case-sidebar">
+    <div class="sidebar-block">
+      <span class="sidebar-label">Industry</span>
+      <span class="sidebar-value">Food and Beverage</span>
+    </div>
+    <div class="sidebar-block">
+      <span class="sidebar-label">Project Type</span>
+      <span class="sidebar-value">Voice AI · Demo Build</span>
+    </div>
+    <div class="sidebar-block">
+      <span class="sidebar-label">Stack</span>
+      <span class="sidebar-value">Vapi · ElevenLabs · n8n · Airtable · Cloudflare Pages</span>
+    </div>
+    <div class="sidebar-block">
+      <span class="sidebar-label">Key Features</span>
+      <span class="sidebar-value">Voice interaction · Order routing · Reservation handling · Airtable logging · Live website deployment</span>
+    </div>
+    <a href="index.html#contact" class="btn-primary" style="display:block;text-align:center;margin-top:20px;">Build Something Similar</a>
+  </div>
+</div>
+
+<div class="case-nav">
+  <a href="case-Prime Medical Centre.html">
+    <span class="case-nav-label">← Previous</span>
+    <span class="case-nav-title">prime</span>
+  </a>
+  <a href="case-EduBridge.html" style="text-align:right;">
+    <span class="case-nav-label">Next →</span>
+    <span class="case-nav-title">edubridge</span>
+  </a>
+</div>
+
+<footer class="footer">
+  <span>© 2026 Nora Anabiri</span>
+  <span>AI Automation Specialist · Lagos, Nigeria</span>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

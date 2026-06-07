@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Nora Anabiri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.about-hero { padding: 140px 6% 80px; display: grid; grid-template-columns: 360px 1fr; gap: 80px; align-items: start; max-width: 1100px; }
+.about-hero-photo { position: sticky; top: 88px; }
+.about-hero-photo img { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: top; border-radius: var(--radius); display: block; }
+.about-hero-name { font-family: var(--font-serif); font-size: clamp(36px, 5vw, 60px); font-weight: 400; letter-spacing: -0.03em; color: var(--text); margin-bottom: 8px; line-height: 1.05; }
+.about-hero-title { font-size: 14px; color: var(--amber); font-weight: 500; margin-bottom: 32px; letter-spacing: 0.05em; }
+.about-body { font-size: 16px; color: var(--muted); line-height: 1.85; margin-bottom: 20px; }
+.about-body strong { color: var(--text); font-weight: 500; }
+.tools-section { margin-top: 48px; }
+.tools-label { font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--amber); margin-bottom: 16px; display: block; }
+.tools-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.tool-tag { background: var(--surface2); border: 1px solid var(--border); color: var(--muted); font-size: 13px; padding: 6px 14px; border-radius: 4px; }
+@media (max-width: 900px) { .about-hero { grid-template-columns: 1fr; gap: 40px; } .about-hero-photo { position: static; } .about-hero-photo img { aspect-ratio: 4/3; } }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="index.html" class="nav-logo">Nora Anabiri</a>
+  <ul class="nav-links">
+    <li><a href="work.html">Work</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <a href="index.html#contact" class="nav-cta">Let's Talk</a>
+</nav>
+
+<div class="about-hero">
+  <div class="about-hero-photo">
+    <img src="PORTFOLIO_HEADSHOT.jpeg" alt="Nora Anabiri — AI Automation Specialist">
+  </div>
+  <div class="about-hero-content">
+    <span class="section-label">About</span>
+    <h1 class="about-hero-name">Nora Anabiri</h1>
+    <p class="about-hero-title">AI Automation Specialist · Lagos, Nigeria</p>
+    <p class="about-body">I build backend automation systems for businesses that are tired of running operations manually. My work connects your tools, eliminates repetitive tasks, and puts your workflows on autopilot — so the business runs even when you're not in it.</p>
+    <p class="about-body">My core stack is <strong>n8n</strong>, <strong>Gemini AI</strong>, <strong>Airtable</strong>, <strong>Supabase</strong>, <strong>GreenAPI</strong> for WhatsApp, <strong>Vapi</strong> for voice, <strong>Pinecone</strong> for vector search, and <strong>Softr</strong> for client portals.</p>
+    <p class="about-body">Every system I deliver is scoped specifically to your business, tested end-to-end before handover, and documented so you can manage it independently without depending on me for every change.</p>
+    <p class="about-body">I am currently available for new projects.</p>
+    <div class="tools-section">
+      <span class="tools-label">Stack</span>
+      <div class="tools-list">
+        <span class="tool-tag">n8n</span>
+        <span class="tool-tag">Gemini AI</span>
+        <span class="tool-tag">Airtable</span>
+        <span class="tool-tag">Supabase</span>
+        <span class="tool-tag">GreenAPI</span>
+        <span class="tool-tag">Vapi</span>
+        <span class="tool-tag">ElevenLabs</span>
+        <span class="tool-tag">Pinecone</span>
+        <span class="tool-tag">Softr</span>
+        <span class="tool-tag">Lovable</span>
+        <span class="tool-tag">Cloudflare Pages</span>
+      </div>
+    </div>
+    <div style="margin-top: 40px; display: flex; gap: 16px; flex-wrap: wrap;">
+      <a href="work.html" class="btn-primary">See My Work</a>
+      <a href="index.html#contact" class="btn-ghost">Get In Touch</a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <span>© 2026 Nora Anabiri</span>
+  <span>AI Automation Specialist · Lagos, Nigeria</span>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

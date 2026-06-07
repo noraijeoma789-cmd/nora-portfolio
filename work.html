@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work — Nora Anabiri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.work-hero { padding: 140px 6% 64px; }
+.work-hero h1 { font-family: var(--font-serif); font-size: clamp(36px, 5vw, 60px); font-weight: 400; letter-spacing: -0.03em; color: var(--text); margin-bottom: 16px; }
+.work-hero p { font-size: 16px; color: var(--muted); max-width: 500px; }
+.all-work-grid { padding: 0 6% 100px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+@media (max-width: 1024px) { .all-work-grid { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 640px) { .all-work-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="index.html" class="nav-logo">Nora Anabiri</a>
+  <ul class="nav-links">
+    <li><a href="work.html">Work</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <a href="index.html#contact" class="nav-cta">Let's Talk</a>
+</nav>
+
+<div class="work-hero">
+  <span class="section-label">All Work</span>
+  <h1>Nine systems.<br>All documented.</h1>
+  <p>Every project below was built, tested, and documented to production standard.</p>
+</div>
+
+<div class="all-work-grid">
+  <a href="case-clinicflow.html" class="work-card">
+    <div class="work-card-inner">
+      <span class="work-tag">Healthcare · WhatsApp · n8n</span>
+      <h3 class="work-title">ClinicFlow</h3>
+      <p class="work-desc">Five-workflow WhatsApp automation for a clinic. Triage, appointment reminders, prescriptions, health tips, and daily reporting — all automated.</p>
+      <span class="work-link">View Case Study →</span>
+    </div>
+  </a>
+  <a href="case-prime.html" class="work-card">
+    <div class="work-card-inner">
+      <span class="work-tag">Healthcare · RAG · Pinecone</span>
+      <h3 class="work-title">Prime Medical Centre</h3>
+      <p class="work-desc">RAG-powered WhatsApp AI agent with Pinecone vector store, human handoff escalation, and Airtable logging.</p>
+      <span class="work-link">View Case Study →</span>
+    </div>
+  </a>
+  <a href="case-mamatee.html" class="work-card">
+    <div class="work-card-inner">
+      <span class="work-tag">F&B · Voice AI · Vapi</span>
+      <h3 class="work-title">Mama Tee's Kitchen</h3>
+      <p class="work-desc">Voice AI restaurant assistant handling orders and reservations. Deployed on a live Cloudflare Pages site with n8n routing to Airtable.</p>
+      <span class="work-link">View Case Study →</span>
+    </div>
+  </a>
+  <a href="case-edubridge.html" class="work-card">
+    <div class="work-card-inner">
+      <span class="work-tag">Education · Portal · Softr</span>
+      <h3 class="work-title">EduBridge</h3>
+      <p class="work-desc">Student management portal with course catalogue, grade tracking, and role-based access for students and instructors.</p>
+      <span class="work-link">View Case Study →</span>
+    </div>
+  </a>
+  <a href="case-eventhub.html" class="work-card">
+    <div class="work-card-inner">
+      <span class="work-tag">Events · Portal · n8n</span>
+      <h3 class="work-title">EventHub</h3>
+      <p class="work-desc">Event management portal with public listings, attendee registration, feedback collection, and organizer dashboard.</p>
+      <span class="work-link">View Case Study →</span>
+    </div>
+  </a>
+  <a href="case-gym.html" class="work-card">
+    <div class="work-card-inner">
+      <span class="work-tag">Fitness · Membership · n8n</span>
+      <h3 class="work-title">Gym Subscription Manager</h3>
+      <p class="work-desc">Automated membership lifecycle — registration, welcome emails, daily expiry detection, Telegram owner alerts, and renewal confirmation.</p>
+      <span class="work-link">View Case Study →</span>
+    </div>
+  </a>
+  <a href="case-newsletter.html" class="work-card">
+    <div class="work-card-inner">
+      <span class="work-tag">Marketing · Email · Gemini AI</span>
+      <h3 class="work-title">Newsletter Automation</h3>
+      <p class="work-desc">AI segmentation with Gemini, deduplication, and 7-day personalised drip sequence — fully automated from subscriber signup.</p>
+      <span class="work-link">View Case Study →</span>
+    </div>
+  </a>
+  <a href="case-email.html" class="work-card">
+    <div class="work-card-inner">
+      <span class="work-tag">Operations · Email · Gemini AI</span>
+      <h3 class="work-title">AI Email Classification</h3>
+      <p class="work-desc">Gemini AI classifies incoming emails into six business departments and routes them to the correct Airtable table automatically.</p>
+      <span class="work-link">View Case Study →</span>
+    </div>
+  </a>
+  <a href="index.html#contact" class="work-card work-card--all">
+    <div class="work-card-inner">
+      <h3 class="work-title">Want something built?</h3>
+      <p class="work-desc">Tell me what you're trying to automate.</p>
+      <span class="work-link">Get In Touch →</span>
+    </div>
+  </a>
+</div>
+
+<footer class="footer">
+  <span>© 2026 Nora Anabiri</span>
+  <span>AI Automation Specialist · Lagos, Nigeria</span>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
