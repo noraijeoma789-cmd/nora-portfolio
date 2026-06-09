@@ -4,187 +4,247 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nora Anabiri — AI Automation Specialist</title>
-<meta name="description" content="I automate business operations using n8n, WhatsApp, Voice AI, and client portals. Based in Lagos, Nigeria.">
+<meta name="description" content="I automate business operations. n8n workflows, WhatsApp agents, Voice AI, and client portals.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav class="nav">
-  <a href="index.html" class="nav-logo">Nora Anabiri</a>
+<nav class="nav" id="nav">
+  <a href="#" class="nav-logo">Nora<span>.</span></a>
   <ul class="nav-links">
-    <li><a href="work.html">Work</a></li>
-    <li><a href="about.html">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="#contact" class="nav-cta">Let's Talk</a>
-  <button class="nav-toggle" aria-label="menu">
-    <span></span><span></span>
-  </button>
+  <a href="https://wa.me/2348151341244" target="_blank" class="nav-cta">Hire Me</a>
 </nav>
 
-<section class="hero">
-  <div class="hero-tag">Available for new projects</div>
-  <h1 class="hero-headline">
-    Your business runs.<br>
-    <em>You just stop running it manually.</em>
-  </h1>
-  <p class="hero-sub">AI automation specialist building n8n workflows, WhatsApp agents, Voice AI, and client portals for businesses ready to stop doing manually what a system can handle.</p>
-  <div class="hero-actions">
-    <a href="work.html" class="btn-primary">See My Work</a>
-    <a href="#contact" class="btn-ghost">Get In Touch</a>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <div class="hero-available">
+      <span class="dot"></span>
+      Available for Projects
+    </div>
+    <h1 class="hero-h1">
+      Your business runs.<br>
+      <em>You stop running it<br>manually.</em>
+    </h1>
+    <p class="hero-p">I build AI automation systems — n8n workflows, WhatsApp agents, Voice AI, and client portals — for businesses ready to stop doing manually what a system can handle.</p>
+    <div class="hero-btns">
+      <a href="#work" class="btn-solid">See My Work</a>
+      <a href="#contact" class="btn-line">Get In Touch</a>
+    </div>
+
   </div>
-  <div class="hero-stats">
-    <div class="stat"><span class="stat-num">9</span><span class="stat-label">Projects Built</span></div>
-    <div class="stat-divider"></div>
-    <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Tools Integrated</span></div>
-    <div class="stat-divider"></div>
-    <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Tested & Documented</span></div>
+  <div class="hero-right">
+    <div class="hero-photo-wrap">
+      <img src="PORTFOLIO_HEADSHOT.jpeg" alt="Nora Anabiri" class="hero-photo">
+      <div class="hero-photo-badge">AI Automation Specialist</div>
+    </div>
   </div>
 </section>
 
-<section class="section services" id="services">
-  <div class="section-header">
-    <span class="section-label">What I Build</span>
-    <h2 class="section-title">Six ways I automate your operations</h2>
+<!-- WORK -->
+<section class="section" id="work">
+  <div class="section-label">Selected Work</div>
+  <h2 class="section-title">Projects That Run Businesses</h2>
+  <p class="section-sub">Every project below is documented end-to-end — the problem, the system I built, and the outcome.</p>
+
+  <div class="projects">
+
+    <div class="project project--wide">
+      <div class="project-img-wrap">
+        <img src="clinicflow-canvas.png" alt="ClinicFlow" class="project-img">
+      </div>
+      <div class="project-info">
+        <span class="project-tag">Healthcare · WhatsApp · n8n</span>
+        <h3 class="project-name">ClinicFlow</h3>
+        <p class="project-desc">Five connected n8n workflows automating the full patient communication cycle for a medical clinic via WhatsApp — triage, appointment reminders, prescriptions, health tips, and daily reporting to a live dashboard.</p>
+        <div class="project-stack">n8n · Gemini AI · GreenAPI · Supabase · Lovable</div>
+        <a href="case-clinicflow.html" class="project-link">View Full Case Study →</a>
+      </div>
+    </div>
+
+    <div class="project project--wide project--flip">
+      <div class="project-img-wrap">
+        <img src="prime-rag-workflow.png" alt="Prime Medical Centre" class="project-img">
+      </div>
+      <div class="project-info">
+        <span class="project-tag">Healthcare · RAG · Pinecone</span>
+        <h3 class="project-name">Prime Medical Centre</h3>
+        <p class="project-desc">RAG-powered WhatsApp AI agent that retrieves answers from a medical knowledge base using Pinecone vector search, with confidence-based escalation to a human agent and full Airtable logging.</p>
+        <div class="project-stack">n8n · Gemini AI · Pinecone · GreenAPI · Airtable</div>
+        <a href="case-prime.html" class="project-link">View Full Case Study →</a>
+      </div>
+    </div>
+
+    <div class="project project--wide">
+      <div class="project-img-wrap">
+        <img src="mamatee-vapi.png" alt="Mama Tee's Kitchen" class="project-img">
+      </div>
+      <div class="project-info">
+        <span class="project-tag">F&B · Voice AI · Vapi</span>
+        <h3 class="project-name">Mama Tee's Kitchen</h3>
+        <p class="project-desc">Voice AI restaurant assistant deployed on a live website. Handles order inquiries and reservations via Vapi and ElevenLabs, with n8n routing all interactions to Airtable automatically.</p>
+        <div class="project-stack">Vapi · ElevenLabs · n8n · Airtable · Cloudflare Pages</div>
+        <a href="case-mamatee.html" class="project-link">View Full Case Study →</a>
+      </div>
+    </div>
+
+    <div class="project-grid-3">
+      <div class="project-card">
+        <img src="eventhub-events.png" alt="EventHub" class="project-card-img">
+        <span class="project-tag">Events · Portal</span>
+        <h3 class="project-card-name">EventHub</h3>
+        <p class="project-card-desc">Event management portal with public listings, registration, and organizer dashboard. AI-generated feedback summaries via Gemini.</p>
+        <a href="case-eventhub.html" class="project-link">Case Study →</a>
+      </div>
+      <div class="project-card">
+        <img src="gym-workflows.png" alt="Gym Subscription Manager" class="project-card-img">
+        <span class="project-tag">Fitness · Membership</span>
+        <h3 class="project-card-name">Gym Subscription Manager</h3>
+        <p class="project-card-desc">Three workflows automating the full membership lifecycle — registration, daily expiry detection, Telegram alerts, and renewal confirmation.</p>
+        <a href="case-gym.html" class="project-link">Case Study →</a>
+      </div>
+      <div class="project-card">
+        <img src="newsletter-workflow.png" alt="Newsletter Automation" class="project-card-img">
+        <span class="project-tag">Marketing · Email</span>
+        <h3 class="project-card-name">Newsletter Automation</h3>
+        <p class="project-card-desc">Gemini AI segments subscribers on signup and triggers a personalised 7-day drip sequence automatically. Includes deduplication.</p>
+        <a href="case-newsletter.html" class="project-link">Case Study →</a>
+      </div>
+    </div>
+
+    <div class="project-grid-2">
+      <div class="project-card">
+        <img src="email-workflow.png" alt="AI Email Classification" class="project-card-img">
+        <span class="project-tag">Operations · Gemini AI</span>
+        <h3 class="project-card-name">AI Email Classification</h3>
+        <p class="project-card-desc">Gemini AI classifies incoming emails into six departments and routes them to the correct Airtable table automatically via IMAP monitoring.</p>
+        <a href="case-email.html" class="project-link">Case Study →</a>
+      </div>
+      <div class="project-card">
+        <img src="edubridge-courses.png" alt="EduBridge" class="project-card-img">
+        <span class="project-tag">Education · Portal · Softr</span>
+        <h3 class="project-card-name">EduBridge</h3>
+        <p class="project-card-desc">Student management portal with role-based access, course catalogue, and grade tracking for students and instructors.</p>
+        <a href="case-edubridge.html" class="project-link">Case Study →</a>
+      </div>
+    </div>
+
   </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section section--dark" id="services">
+  <div class="section-label">What I Build</div>
+  <h2 class="section-title">Six Automation Services</h2>
   <div class="services-grid">
-    <div class="service-card">
-      <div class="service-icon">01</div>
-      <h3 class="service-name">WhatsApp Automation</h3>
-      <p class="service-desc">AI-powered WhatsApp agents that handle customer inquiries, bookings, triage, and follow-ups around the clock.</p>
-      <div class="service-stack">n8n · GreenAPI · Gemini AI</div>
+    <div class="svc">
+      <div class="svc-num">01</div>
+      <h3 class="svc-name">WhatsApp Automation</h3>
+      <p class="svc-desc">AI agents on WhatsApp that handle inquiries, bookings, triage, and follow-ups around the clock without staff involvement.</p>
+      <div class="svc-tools">n8n · GreenAPI · Gemini AI</div>
     </div>
-    <div class="service-card">
-      <div class="service-icon">02</div>
-      <h3 class="service-name">n8n Workflow Automation</h3>
-      <p class="service-desc">Custom multi-step workflows connecting your tools, eliminating manual data entry and repetitive tasks.</p>
-      <div class="service-stack">n8n · Airtable · Webhooks</div>
+    <div class="svc">
+      <div class="svc-num">02</div>
+      <h3 class="svc-name">n8n Workflow Automation</h3>
+      <p class="svc-desc">Multi-step workflows connecting your tools and eliminating manual data entry, repetitive tasks, and human error.</p>
+      <div class="svc-tools">n8n · Airtable · Webhooks</div>
     </div>
-    <div class="service-card">
-      <div class="service-icon">03</div>
-      <h3 class="service-name">Voice AI Assistant</h3>
-      <p class="service-desc">Intelligent voice agents that answer calls, take orders, and route inquiries — deployed on your website.</p>
-      <div class="service-stack">Vapi · ElevenLabs · n8n</div>
+    <div class="svc">
+      <div class="svc-num">03</div>
+      <h3 class="svc-name">Voice AI Assistant</h3>
+      <p class="svc-desc">Intelligent voice agents that answer calls, take orders, and route inquiries — deployed directly on your website.</p>
+      <div class="svc-tools">Vapi · ElevenLabs · n8n</div>
     </div>
-    <div class="service-card">
-      <div class="service-icon">04</div>
-      <h3 class="service-name">Client Portal</h3>
-      <p class="service-desc">No-code portals with role-based access for students, clients, or team members — connected to your database.</p>
-      <div class="service-stack">Softr · Airtable · Supabase</div>
+    <div class="svc">
+      <div class="svc-num">04</div>
+      <h3 class="svc-name">Client Portal</h3>
+      <p class="svc-desc">No-code portals with role-based access for students, clients, or team members — built on Softr and connected to your database.</p>
+      <div class="svc-tools">Softr · Airtable · Supabase</div>
     </div>
-    <div class="service-card">
-      <div class="service-icon">05</div>
-      <h3 class="service-name">AI Email Classification</h3>
-      <p class="service-desc">Gemini AI reads incoming emails, classifies them by department, and routes them to the right place automatically.</p>
-      <div class="service-stack">n8n · Gemini AI · Airtable</div>
+    <div class="svc">
+      <div class="svc-num">05</div>
+      <h3 class="svc-name">AI Email Classification</h3>
+      <p class="svc-desc">Gemini AI reads incoming emails, classifies them by department, and routes them to the right destination automatically.</p>
+      <div class="svc-tools">n8n · Gemini AI · Airtable</div>
     </div>
-    <div class="service-card service-card--featured">
-      <div class="service-icon">06</div>
-      <h3 class="service-name">Full Business Automation Stack</h3>
-      <p class="service-desc">End-to-end automation across your entire operation — from customer intake to internal workflows to reporting.</p>
-      <div class="service-stack">Full Stack · Custom Scope</div>
-    </div>
-  </div>
-</section>
-
-<section class="section work-preview" id="work">
-  <div class="section-header">
-    <span class="section-label">Selected Work</span>
-    <h2 class="section-title">Nine systems built and documented</h2>
-  </div>
-  <div class="work-grid">
-    <a href="case-clinicflow.html" class="work-card">
-      <div class="work-card-inner">
-        <span class="work-tag">Healthcare · WhatsApp</span>
-        <h3 class="work-title">ClinicFlow</h3>
-        <p class="work-desc">Five-workflow WhatsApp automation for a clinic — triage, reminders, prescriptions, health tips, and reporting.</p>
-        <span class="work-link">View Case Study →</span>
-      </div>
-    </a>
-    <a href="case-prime.html" class="work-card">
-      <div class="work-card-inner">
-        <span class="work-tag">Healthcare · RAG</span>
-        <h3 class="work-title">Prime Medical Centre</h3>
-        <p class="work-desc">RAG-powered WhatsApp AI agent with Pinecone vector store, human handoff, and Airtable logging.</p>
-        <span class="work-link">View Case Study →</span>
-      </div>
-    </a>
-    <a href="case-mamatee.html" class="work-card">
-      <div class="work-card-inner">
-        <span class="work-tag">F&B · Voice AI</span>
-        <h3 class="work-title">Mama Tee's Kitchen</h3>
-        <p class="work-desc">Voice AI restaurant assistant handling orders and reservations, deployed on a live Cloudflare Pages website.</p>
-        <span class="work-link">View Case Study →</span>
-      </div>
-    </a>
-    <a href="case-eventhub.html" class="work-card">
-      <div class="work-card-inner">
-        <span class="work-tag">Events · Portal</span>
-        <h3 class="work-title">EventHub</h3>
-        <p class="work-desc">Event management portal with public listings, attendee registration, and organizer dashboard.</p>
-        <span class="work-link">View Case Study →</span>
-      </div>
-    </a>
-    <a href="case-gym.html" class="work-card">
-      <div class="work-card-inner">
-        <span class="work-tag">Fitness · Membership</span>
-        <h3 class="work-title">Gym Subscription Manager</h3>
-        <p class="work-desc">Automated membership lifecycle — registration, expiry detection, Telegram alerts, renewal confirmation.</p>
-        <span class="work-link">View Case Study →</span>
-      </div>
-    </a>
-    <a href="work.html" class="work-card work-card--all">
-      <div class="work-card-inner">
-        <h3 class="work-title">4 More Projects</h3>
-        <p class="work-desc">EduBridge, Newsletter Automation, AI Email Classification, and more.</p>
-        <span class="work-link">View All Work →</span>
-      </div>
-    </a>
-  </div>
-</section>
-
-<section class="section about-strip">
-  <div class="about-strip-inner">
-    <div class="about-strip-photo">
-      <img src="PORTFOLIO_HEADSHOT.jpeg" alt="Nora Anabiri" class="about-photo">
-    </div>
-    <div class="about-strip-content">
-      <span class="section-label">About</span>
-      <h2 class="about-strip-title">I build the systems. You run the business.</h2>
-      <p class="about-strip-text">I am an AI automation specialist based in Lagos, Nigeria. My stack is n8n, Gemini AI, Airtable, Supabase, GreenAPI, Vapi, Pinecone, and Softr. Every system I deliver is scoped to your specific business, tested before handover, and documented so you can manage it independently.</p>
-      <a href="about.html" class="btn-ghost">More About Me →</a>
+    <div class="svc svc--accent">
+      <div class="svc-num">06</div>
+      <h3 class="svc-name">Full Business Automation Stack</h3>
+      <p class="svc-desc">End-to-end automation across your entire operation — customer intake, internal workflows, notifications, and reporting.</p>
+      <div class="svc-tools">Full Stack · Custom Scope</div>
     </div>
   </div>
 </section>
 
-<section class="section contact" id="contact">
+<!-- ABOUT -->
+<section class="section about-section" id="about">
+  <div class="about-photo-col">
+    <img src="PORTFOLIO_HEADSHOT.jpeg" alt="Nora Anabiri" class="about-img">
+  </div>
+  <div class="about-text-col">
+    <div class="section-label">About</div>
+    <h2 class="about-name">Nora Anabiri</h2>
+    <p class="about-role">AI Automation Specialist</p>
+    <p class="about-body">I build backend automation systems for businesses that are tired of running operations manually. My work connects your tools, eliminates repetitive tasks, and puts your workflows on autopilot.</p>
+    <p class="about-body">Every system I deliver is scoped to your specific business, tested end-to-end before handover, and documented so you can manage it independently.</p>
+    <div class="about-tools">
+      <span class="tool">n8n</span>
+      <span class="tool">Gemini AI</span>
+      <span class="tool">Airtable</span>
+      <span class="tool">Supabase</span>
+      <span class="tool">GreenAPI</span>
+      <span class="tool">Vapi</span>
+      <span class="tool">ElevenLabs</span>
+      <span class="tool">Pinecone</span>
+      <span class="tool">Softr</span>
+      <span class="tool">Lovable</span>
+    </div>
+    <a href="https://wa.me/2348151341244" target="_blank" class="btn-solid" style="margin-top:32px;display:inline-block;">Let's Work Together</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact-section" id="contact">
   <div class="contact-inner">
-    <span class="section-label">Contact</span>
+    <div class="section-label">Contact</div>
     <h2 class="contact-title">Ready to automate?</h2>
-    <p class="contact-sub">Tell me what you're trying to eliminate and I'll tell you how we build it.</p>
-    <div class="contact-methods">
-      <a href="mailto:noraijeoma789@gmail.com" class="contact-method">
-        <span class="contact-method-label">Email</span>
-        <span class="contact-method-value">noraijeoma789@gmail.com</span>
+    <p class="contact-sub">Tell me what you're trying to eliminate. I'll tell you how we build it.</p>
+    <div class="contact-cards">
+      <a href="https://wa.me/2348151341244" target="_blank" class="contact-card">
+        <span class="contact-card-label">WhatsApp</span>
+        <span class="contact-card-val">+234 815 134 1244</span>
+        <span class="contact-card-note">Fastest response</span>
       </a>
-      <a href="https://wa.me/2348151341244" class="contact-method" target="_blank">
-        <span class="contact-method-label">WhatsApp</span>
-        <span class="contact-method-value">+234 815 134 1244</span>
+      <a href="mailto:noraijeoma789@gmail.com" class="contact-card">
+        <span class="contact-card-label">Email</span>
+        <span class="contact-card-val">noraijeoma789@gmail.com</span>
+        <span class="contact-card-note">For detailed briefs</span>
       </a>
-      <a href="https://www.linkedin.com/in/anabirinora" class="contact-method" target="_blank">
-        <span class="contact-method-label">LinkedIn</span>
-        <span class="contact-method-value">anabirinora</span>
+      <a href="https://www.linkedin.com/in/anabirinora" target="_blank" class="contact-card">
+        <span class="contact-card-label">LinkedIn</span>
+        <span class="contact-card-val">anabirinora</span>
+        <span class="contact-card-note">Connect professionally</span>
       </a>
     </div>
   </div>
 </section>
 
 <footer class="footer">
-  <span>© 2026 Nora Anabiri</span>
-  <span>AI Automation Specialist · Lagos, Nigeria</span>
+  <span>© 2026 Nora Anabiri · AI Automation Specialist</span>
+  <div class="footer-links">
+    <a href="#work">Work</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
 </footer>
 
 <script src="main.js"></script>
