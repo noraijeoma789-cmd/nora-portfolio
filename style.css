@@ -99,10 +99,13 @@ body {
   border: 1px solid var(--border);
 }
 .hero-photo-badge {
-  position: absolute; bottom: -16px; left: 50%; transform: translateX(-50%);
-  background: var(--amber); color: #000; font-size: 12px; font-weight: 600;
-  padding: 8px 20px; border-radius: 20px; white-space: nowrap;
+  position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%);
+  background: var(--amber); color: #000;
+  padding: 10px 24px; border-radius: 12px; white-space: nowrap;
+  display: flex; flex-direction: column; align-items: center; gap: 2px;
 }
+.hero-photo-badge strong { font-size: 14px; font-weight: 700; line-height: 1; }
+.hero-photo-badge span { font-size: 11px; font-weight: 500; opacity: 0.75; }
 
 /* SECTIONS */
 .section { padding: 100px 5%; }
